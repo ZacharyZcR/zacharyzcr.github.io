@@ -18,4 +18,79 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2025/01/17/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h2 id="1-Mermaid-流程图测试"><a href="#1-Mermaid-流程图测试" class="headerlink" title="1. Mermaid 流程图测试"></a>1. Mermaid 流程图测试</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[开始] --&gt; B&#123;是否继续&#125;</span><br><span class="line">    B --&gt;|Yes| C[继续处理]</span><br><span class="line">    B --&gt;|No| D[结束]</span><br><span class="line">    C --&gt; B</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-代码测试"><a href="#2-代码测试" class="headerlink" title="2. 代码测试"></a>2. 代码测试</h2><p>Python 代码示例：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">fibonacci</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">if</span> n &lt;= <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> n</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试</span></span><br><span class="line"><span class="built_in">print</span>(fibonacci(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+
+<p>C++ 代码示例：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello, Hexo!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-数学公式测试"><a href="#3-数学公式测试" class="headerlink" title="3. 数学公式测试"></a>3. 数学公式测试</h2><p>行内公式：当 $a \ne 0$ 时，方程 $ax^2 + bx + c &#x3D; 0$ 的解为：</p>
+<p>行间公式：</p>
+<p>$$<br>x &#x3D; {-b \pm \sqrt{b^2-4ac} \over 2a}<br>$$</p>
+<p>矩阵示例：</p>
+<p>$$<br>\begin{pmatrix}<br>1 &amp; 2 &amp; 3 \<br>4 &amp; 5 &amp; 6 \<br>7 &amp; 8 &amp; 9<br>\end{pmatrix}<br>$$</p>
+<h2 id="4-表格测试"><a href="#4-表格测试" class="headerlink" title="4. 表格测试"></a>4. 表格测试</h2><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>支持情况</th>
+<th>难度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mermaid</td>
+<td>✅</td>
+<td>中等</td>
+</tr>
+<tr>
+<td>数学公式</td>
+<td>✅</td>
+<td>简单</td>
+</tr>
+<tr>
+<td>代码高亮</td>
+<td>✅</td>
+<td>简单</td>
+</tr>
+</tbody></table>
+<h2 id="5-引用测试"><a href="#5-引用测试" class="headerlink" title="5. 引用测试"></a>5. 引用测试</h2><blockquote>
+<p>这是一段引用文本</p>
+<p>这是第二行引用</p>
+</blockquote>
+<h2 id="6-图片测试"><a href="#6-图片测试" class="headerlink" title="6. 图片测试"></a>6. 图片测试</h2><p><img src="C:\Users\29037\AppData\Local\Temp\2643f8e1-75ae-4403-9097-db9b01f4a313.png" alt="2643f8e1-75ae-4403-9097-db9b01f4a313"></p>
+<h2 id="7-列表测试"><a href="#7-列表测试" class="headerlink" title="7. 列表测试"></a>7. 列表测试</h2><p>有序列表：</p>
+<ol>
+<li>第一项<ol>
+<li>子项 1</li>
+<li>子项 2</li>
+</ol>
+</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+<p>无序列表：</p>
+<ul>
+<li>项目一<ul>
+<li>子项目</li>
+<li>子项目</li>
+</ul>
+</li>
+<li>项目二</li>
+<li>项目三</li>
+</ul>
+<h2 id="8-文本格式测试"><a href="#8-文本格式测试" class="headerlink" title="8. 文本格式测试"></a>8. 文本格式测试</h2><ul>
+<li><strong>粗体文本</strong></li>
+<li><em>斜体文本</em></li>
+<li><del>删除线文本</del></li>
+<li>&#x3D;&#x3D;高亮文本&#x3D;&#x3D;</li>
+<li><code>行内代码</code></li>
+</ul>
+<h2 id="9-链接测试"><a href="#9-链接测试" class="headerlink" title="9. 链接测试"></a>9. 链接测试</h2><p><a href="https://github.com/zacharyzcr">访问我的 GitHub</a></p>
+]]></content>
+  </entry>
 </search>
